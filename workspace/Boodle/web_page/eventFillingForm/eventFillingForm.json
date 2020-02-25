@@ -1,8 +1,8 @@
 {
   "designerVersion" : "1.10.34",
-  "id" : "fillEventDataForm",
-  "name" : "fillEventDataForm",
-  "lastUpdate" : 1581601804883,
+  "id" : "eventFillingForm",
+  "name" : "eventFillingForm",
+  "lastUpdate" : 1582642545499,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d7fd1b67-318c-4471-ba49-606568607891",
+        "reference" : "02a6796f-6022-4a1b-bff4-cd18c20f1e98",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -69,7 +69,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "8bc38cfe-dc44-487a-a9dc-9f1f3d3fd06f",
+              "reference" : "032b03da-e32f-4cb3-a744-fd309180a566",
               "hasValidationError" : false,
               "id" : "pbTitle"
             }
@@ -124,7 +124,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7c1471ad-f76e-4b12-b788-60604c47c821",
+              "reference" : "4099cf49-4c7e-48a4-81b1-3835ddda06cc",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -139,7 +139,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "ad668b4b-d882-4d05-8861-8dc89d510282",
+        "reference" : "854fa741-d49c-4ed7-a23e-7cd9adfa00eb",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -148,7 +148,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "ba70136c-6618-488d-9f03-0bc9cf18ab70",
+          "reference" : "b07a0ce1-ae58-4870-ab61-3017fee32a23",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -206,7 +206,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c31d993f-b0b0-4616-81ba-507aef16b242",
+                "reference" : "403b9d02-6d8f-435c-bcbf-d8a389f7dc20",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -222,7 +222,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -259,7 +260,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "34b94adb-d4f9-4de8-a981-7fcac50fea8d",
+                "reference" : "ee67af77-0bb2-4db2-b24d-96d437e53072",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -278,8 +279,12 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!createdEvent.shortDescription"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -287,19 +292,18 @@
                         },
                         "widgetId" : {
                           "type" : "constant",
-                          "value" : "pbText"
+                          "value" : "pbTitle"
                         },
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
-                          "type" : "interpolation",
-                          "value" : "Short Description"
+                          "type" : "interpolation"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{createdEvent.shortDescription}}"
+                          "value" : "Creator"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -307,16 +311,184 @@
                         },
                         "class" : {
                           "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         }
                       },
-                      "reference" : "2687a685-44c9-4e2b-973b-0ea1d004f6a8",
+                      "reference" : "712afa8a-75c0-40e7-ae20-9ecafb874058",
                       "hasValidationError" : false,
-                      "id" : "pbText"
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "repeatedCollection" : {
+                          "type" : "variable",
+                          "value" : ""
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant"
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "522cab26-9591-4ef3-b2c2-e201921ebe4a",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!createdEvent_creator.firstname"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "widgetId" : {
+                                "type" : "constant",
+                                "value" : "pbText"
+                              },
+                              "readOnly" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Firstname"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{createdEvent_creator.firstname}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "class" : {
+                                "type" : "constant",
+                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "9609fb90-ae36-494c-a145-df35fa204635",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!createdEvent_creator.lastname"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "widgetId" : {
+                                "type" : "constant",
+                                "value" : "pbText"
+                              },
+                              "readOnly" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Lastname"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{createdEvent_creator.lastname}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "class" : {
+                                "type" : "constant",
+                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "04da8801-6da0-463f-9140-a302e625e072",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ]
+                      ]
                     }
                   ],
                   [
@@ -329,13 +501,9 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "hidden" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!createdEvent.fullDescription"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -343,7 +511,104 @@
                         },
                         "widgetId" : {
                           "type" : "constant",
-                          "value" : "pbText"
+                          "value" : "pbInput"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Short Name"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "class" : {
+                          "type" : "constant",
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "createdEvent.shortName"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "ae36625c-cfac-4bef-b02a-5f44d98354fd",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "widgetId" : {
+                          "type" : "constant",
+                          "value" : "pbInput"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "readOnly" : {
                           "type" : "constant",
@@ -353,9 +618,24 @@
                           "type" : "interpolation",
                           "value" : "Full Description"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{createdEvent.fullDescription}}"
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -363,16 +643,38 @@
                         },
                         "class" : {
                           "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "createdEvent.fullDescription"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "cec7100e-d829-4670-b548-78bb585409fe",
+                      "reference" : "265b1d48-d95c-415f-9ad5-b7b297998609",
                       "hasValidationError" : false,
-                      "id" : "pbText"
+                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -429,7 +731,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "0fab03b5-e1b6-480f-a56c-91bae655ae1f",
+                      "reference" : "6abd9628-15be-4f40-9cc8-f1ece3c38b35",
                       "hasValidationError" : false,
                       "id" : "pbTitle"
                     }
@@ -483,7 +785,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "86a09157-39be-4ee8-9617-bd59c746e395",
+                      "reference" : "8160e2bb-ee75-4c57-abbf-5055ea1e6b09",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -569,7 +871,7 @@
                                 "value" : "$item"
                               }
                             },
-                            "reference" : "5e733b6c-1022-49e9-a118-5dd321d264d3",
+                            "reference" : "da7e8b3d-f13c-4b8d-9aef-40f663aec3c5",
                             "hasValidationError" : false,
                             "id" : "pbDatePicker"
                           },
@@ -652,7 +954,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "5f9ae096-5e76-4a7c-9b86-773dda3bdcb5",
+                            "reference" : "2e4e13d8-b61b-46a7-8838-d36de4c130c9",
                             "hasValidationError" : false,
                             "id" : "pbButton"
                           }
@@ -738,235 +1040,9 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "195229e8-c7cb-4be4-b24b-f8c22577c5ea",
+                      "reference" : "c453c021-8440-4cce-a5ab-4d8dc916764f",
                       "hasValidationError" : false,
                       "id" : "pbButton"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant",
-                          "value" : "pbTitle"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Creator"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "cd6d60a3-3fca-4cb9-9606-436c039cf711",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "widgetId" : {
-                          "type" : "constant"
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "class" : {
-                          "type" : "constant",
-                          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "9ca59503-f58e-462f-a4cd-f97da0884b6b",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!createdEvent_creator.firstname"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbText"
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Firstname"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{createdEvent_creator.firstname}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "393e7ad4-f66c-4096-8397-0d4aca9a4bb0",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!createdEvent_creator.lastname"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "widgetId" : {
-                                "type" : "constant",
-                                "value" : "pbText"
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Lastname"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{createdEvent_creator.lastname}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "class" : {
-                                "type" : "constant",
-                                "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "f0dfda10-2e13-4d00-90fa-a1fac1f79d19",
-                            "hasValidationError" : false,
-                            "id" : "pbText"
-                          }
-                        ]
-                      ]
                     }
                   ],
                   [
@@ -1023,7 +1099,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "033a098b-f8e1-414b-bd0b-25a0e510e379",
+                      "reference" : "aa9458c2-11fd-4a96-b91f-45609556ccc2",
                       "hasValidationError" : false,
                       "id" : "pbTitle"
                     }
@@ -1077,7 +1153,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a71a494d-9fba-45a0-8237-084dbeb42f25",
+                      "reference" : "25c383f8-2af5-4526-a5a8-318b8cdc3e2d",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -1152,7 +1228,7 @@
                                 "value" : "$item"
                               }
                             },
-                            "reference" : "156c09fe-e94f-46c4-bb69-df2012f4509a",
+                            "reference" : "04a5bfdf-1309-44f7-a2d0-e5f9d58bf4e8",
                             "hasValidationError" : false,
                             "id" : "pbSelect"
                           }
@@ -1208,7 +1284,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "a8b64bc0-5039-4a5e-906c-5d10485d5612",
+                            "reference" : "92064041-62d0-4945-9afe-3ee0bd945cb6",
                             "hasValidationError" : false,
                             "id" : "pbText"
                           }
@@ -1264,7 +1340,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "2d17e2b3-bc36-4b06-8f88-5bd787b376d1",
+                            "reference" : "c1911e2d-6b70-4b0b-b509-4ba509a538d7",
                             "hasValidationError" : false,
                             "id" : "pbText"
                           }
@@ -1349,7 +1425,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "2d569ba1-951a-499d-a172-569658a8a3a4",
+                            "reference" : "9f9620f6-e2f3-43a1-b765-b3008286eaf1",
                             "hasValidationError" : false,
                             "id" : "pbButton"
                           }
@@ -1436,7 +1512,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "7f9650e4-d91a-449d-977f-c82589d45982",
+                      "reference" : "534ebb61-e7d9-46b1-ad98-af708a5fbe74",
                       "hasValidationError" : false,
                       "id" : "pbButton"
                     }
@@ -1492,7 +1568,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "2a093190-2dc5-49ba-8779-7ee44497e5f7",
+                      "reference" : "cb704748-1cd2-427c-b481-abf7a59d17a0",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -1548,7 +1624,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "c89c0f23-f187-4e09-b026-7c1c7dc2f4c5",
+                      "reference" : "2d057740-ea47-46cd-9a9c-752fbcd2e507",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -1639,7 +1715,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "fbcf87d9-3934-4cf9-949c-37cc81eaf983",
+                "reference" : "3c75fcf2-e4bc-4538-be75-c231d3e29eb4",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -1698,7 +1774,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "841f866a-3555-4420-9787-55582eed90f8",
+                "reference" : "53706354-b7c6-49fb-97b1-bb3473c8e515",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -1710,16 +1786,16 @@
   ],
   "assets" : [
     {
-      "id" : "d03101be-25ba-4d1a-8970-d230fd80f7b1",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "0a420eee-6a71-4881-abe3-5227c62f1790",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "b52ce199-bc03-4678-b5a7-b7de9f55df19",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "a0d9f6ed-af8e-442d-8ff8-6c0d149ed629",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -1758,17 +1834,19 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.createdEvent && $data.createdEvent_creator && $data.createdEvent_participants ){",
+        "if( $data.createdEvent && $data.createdEvent_participants && $data.createdEvent_creator ){",
         "\t//attach lazy references variables to parent variables",
-        "\t$data.createdEvent.creator = $data.createdEvent_creator;",
         "\t$data.createdEvent.participants = $data.createdEvent_participants;",
+        "\t$data.createdEvent.creator = $data.createdEvent_creator;",
         "\treturn {",
         "\t\t//map createdEvent variable to expected task contract input",
         "\t\tcreatedEventInput: {",
         "\t\t\tdates: $data.createdEvent.dates !== undefined ? $data.createdEvent.dates : null,",
         "\t\t\tparticipants: $data.createdEvent.participants.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null",
-        "\t\t\t}))",
+        "\t\t\t})),",
+        "\t\t\tshortName: $data.createdEvent.shortName !== undefined ? $data.createdEvent.shortName : null,",
+        "\t\t\tfullDescription: $data.createdEvent.fullDescription !== undefined ? $data.createdEvent.fullDescription : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1812,7 +1890,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "41e4667e-a8a6-446d-97ed-a2610b932dcc",
+  "uuid" : "e3643e58-495f-4a55-829b-6dee3972c5c2",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
