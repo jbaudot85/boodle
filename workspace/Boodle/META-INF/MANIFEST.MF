@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Boodle
+Bundle-SymbolicName: boodle
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Bonitasoft S.A.
+Require-Bundle: org.bonitasoft.studioEx.console.libs
+Automatic-Module-Name: boodle
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
