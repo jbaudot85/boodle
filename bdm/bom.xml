@@ -22,6 +22,7 @@
                 <field type="BOOLEAN" length="255" name="attendance" nullable="true" collection="true">
                     <description>one item per date</description>
                 </field>
+                <field type="BOOLEAN" length="255" name="submitted" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
