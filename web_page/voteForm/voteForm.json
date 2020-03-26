@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.34",
   "id" : "voteForm",
   "name" : "voteForm",
-  "lastUpdate" : 1585227053431,
+  "lastUpdate" : 1585229623812,
   "rows" : [
     [
       {
@@ -449,7 +449,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "vote.votes[$index]"
+                                "value" : "vote.attendance[$index]"
                               },
                               "required" : {
                                 "type" : "constant",
@@ -548,6 +548,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "d3786806-0120-405f-9d4f-e10bf2e95129",
@@ -608,7 +631,7 @@
         "\t\t//map vote variable to expected task contract input",
         "\t\tvoteInput: {",
         "\t\t\tdates: $data.vote.dates !== undefined ? $data.vote.dates : null,",
-        "\t\t\tvotes: $data.vote.votes !== undefined ? $data.vote.votes : null",
+        "\t\t\tattendance: $data.vote.attendance !== undefined ? $data.vote.attendance : null",
         "\t\t}",
         "\t}",
         "}"

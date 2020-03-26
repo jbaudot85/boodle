@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<businessObjectModel modelVersion="1.0" productVersion="7.11.0">
+<businessObjectModel modelVersion="1.0" productVersion="7.11.0.W12">
     <businessObjects>
         <businessObject qualifiedName="com.company.model.Event">
             <fields>
@@ -19,7 +19,9 @@
                 <field type="LONG" length="255" name="eventId" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="voterId" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="dates" nullable="true" collection="true"/>
-                <field type="BOOLEAN" length="255" name="votes" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="attendance" nullable="true" collection="true">
+                    <description>one item per date</description>
+                </field>
             </fields>
             <uniqueConstraints/>
             <queries/>
