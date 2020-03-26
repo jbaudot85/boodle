@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME">
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME" description="The ACME organization is an example of a typical hierarchy. It can be used for development.">
   <users>
     <user userName="william.jobs">
       <firstName>William</firstName>
@@ -151,7 +151,7 @@
       <password encrypted="false">bpm</password>
     </user>
     <user userName="virginie.jomphe">
-      <firstName>Virgine</firstName>
+      <firstName>Virginie</firstName>
       <lastName>Jomphe</lastName>
       <title>Mrs</title>
       <jobTitle>Accountant</jobTitle>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>Boodle</name>
-	<comment>7.10.0</comment>
+	<comment>7.11.0</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -37,6 +37,5 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
-		<nature>org.eclipse.emf.texo.eclipse.nature</nature>
 	</natures>
 </projectDescription>

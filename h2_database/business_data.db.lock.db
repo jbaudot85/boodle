@@ -1,6 +1,6 @@
 #FileLock
-#Tue Feb 25 14:46:22 CET 2020
-server=192.168.100.88\:55051
+#Tue Mar 24 14:54:32 CET 2020
+server=192.168.1.29\:52426
 hostName=LAP-00288
 method=file
-id=1707c993ecb07410d094e9e753d0616717206e4a991
+id=1710cd2c72de1ab9f95fd72df76e17dc281d611e7ab

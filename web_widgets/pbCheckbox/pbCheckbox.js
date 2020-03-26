@@ -24,6 +24,6 @@
   }
 }
 ,
-      template: '<div class="checkbox">\n    <label>\n        <input type="checkbox" name="{{ctrl.name}}" ng-model="properties.value" ng-required="properties.required" ng-disabled="properties.disabled"> {{ properties.label | uiTranslate }}\n    </label>\n    <div ng-messages="$form[ctrl.name].$dirty && $form[ctrl.name].$error " ng-messages-include="forms-generic-errors.html" role="alert"></div>\n</div>\n'
+      template: '<div class="checkbox">\n    <label>\n        <input type="checkbox" name="{{ctrl.name}}" ng-model="properties.value" ng-required="properties.required" ng-disabled="properties.disabled"> <ng-bind-html ng-bind-html="properties.label | uiTranslate"/>\n    </label>\n    <div ng-messages="$form[ctrl.name].$dirty && $form[ctrl.name].$error " ng-messages-include="forms-generic-errors.html" role="alert"></div>\n</div>\n'
     };
   });

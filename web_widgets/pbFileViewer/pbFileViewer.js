@@ -44,6 +44,9 @@
       if (isInitializedByAnExternalSystem(controller.document)) {
         return controller.document.url;
       }
+      if (isDocumentArchived(controller.document)) {
+        return '../API/formsDocumentImage?document='+ controller.document.sourceObjectId;
+      }
       return '../API/formsDocumentImage?document='+ controller.document.id;
     } else {
       return $scope.properties.url;
@@ -105,6 +108,11 @@
   function isInitializedByAnExternalSystem(document) {
     // document initialized by an external system has no fileName
     return document && document.fileName == null;
+  }
+
+  function isDocumentArchived(document) {
+    // document that is archived has a source object id
+    return document && document.sourceObjectId !== undefined;
   }
 }
 ,
