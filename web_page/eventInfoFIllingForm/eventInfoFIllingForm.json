@@ -2,7 +2,7 @@
   "designerVersion" : "1.10.34",
   "id" : "eventInfoFIllingForm",
   "name" : "eventInfoFIllingForm",
-  "lastUpdate" : 1582726248868,
+  "lastUpdate" : 1585230122836,
   "rows" : [
     [
       {
@@ -312,6 +312,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
                       "reference" : "b87f87a8-7cbf-4120-a3e6-77f56097a800",
@@ -594,6 +606,30 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "assign" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "url" : {
+                                "type" : "interpolation"
+                              },
+                              "responseStatusCode" : {
+                                "type" : "variable"
+                              },
+                              "dataFromSuccess" : {
+                                "type" : "variable"
+                              },
+                              "closeOnSuccess" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "dataFromError" : {
+                                "type" : "variable"
+                              },
+                              "modalId" : {
+                                "type" : "constant",
+                                "value" : ""
                               }
                             },
                             "reference" : "8386899f-6c66-47ba-abb9-54d12690de66",
@@ -805,8 +841,8 @@
                             "dimension" : {
                               "xs" : 12,
                               "sm" : 12,
-                              "md" : 6,
-                              "lg" : 6
+                              "md" : 12,
+                              "lg" : 12
                             },
                             "propertyValues" : {
                               "cssClasses" : {
@@ -869,10 +905,10 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 6,
+                              "md" : 12,
                               "sm" : 12,
                               "xs" : 12,
-                              "lg" : 6
+                              "lg" : 12
                             },
                             "propertyValues" : {
                               "removeItem" : {
@@ -1121,7 +1157,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
                         "lg" : 12
@@ -1185,6 +1221,24 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "createdEvent.shortName"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "c44ad697-3339-4fb1-8466-d4ee526f72b0",
@@ -1196,7 +1250,7 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 9,
                         "sm" : 12,
                         "xs" : 12,
                         "lg" : 12
@@ -1260,6 +1314,24 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "createdEvent.fullDescription"
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "cc72b449-296c-499e-80ed-1cf4203dcee3",
