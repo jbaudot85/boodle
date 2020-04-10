@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "displayEventForm",
   "name" : "displayEventForm",
-  "lastUpdate" : 1585249531924,
+  "lastUpdate" : 1586510301358,
   "rows" : [
     [
       {
@@ -10,7 +10,20 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
         "reference" : "b2d16894-eb9b-451c-bbb2-f16fd4b755fb",
         "hasValidationError" : false,
         "id" : "pbContainer",
@@ -122,11 +135,12 @@
                   "value" : "shortDescription"
                 },
                 "returnedKey" : {
-                  "type" : "constant"
+                  "type" : "constant",
+                  "value" : "persistenceId"
                 },
                 "selectedValue" : {
                   "type" : "variable",
-                  "value" : ""
+                  "value" : "selectedEventId"
                 }
               },
               "reference" : "86e8b2f8-999b-43f7-b243-5f7859f3cfab",
@@ -135,6 +149,58 @@
             }
           ]
         ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "selectedEventId = {{selectedEventId}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "2e95c737-7b86-43db-a649-5f38a9f56cf5",
+        "hasValidationError" : false,
+        "id" : "pbText"
       }
     ],
     [
@@ -306,6 +372,10 @@
       "value" : [
         "id"
       ],
+      "exposed" : false
+    },
+    "selectedEventId" : {
+      "type" : "constant",
       "exposed" : false
     }
   },
