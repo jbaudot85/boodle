@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "displayEventForm",
   "name" : "displayEventForm",
-  "lastUpdate" : 1586510301358,
+  "lastUpdate" : 1586682573464,
   "rows" : [
     [
       {
@@ -191,14 +191,14 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "selectedEventId = {{selectedEventId}}"
+            "value" : "selectedEventId = {{selectedEventId}}\nselectedEventData = {{selectedEventData}}"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "left"
           }
         },
-        "reference" : "2e95c737-7b86-43db-a649-5f38a9f56cf5",
+        "reference" : "3a71baa0-ad9d-4b28-a10e-3d6dbad61bbd",
         "hasValidationError" : false,
         "id" : "pbText"
       }
@@ -376,6 +376,13 @@
     },
     "selectedEventId" : {
       "type" : "constant",
+      "exposed" : false
+    },
+    "selectedEventData" : {
+      "type" : "url",
+      "value" : [
+        "../API/extension/eventData?e={{selectedEventId}}"
+      ],
       "exposed" : false
     }
   },

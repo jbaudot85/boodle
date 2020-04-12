@@ -434,8 +434,8 @@
           <referencedElements xmi:type="expression:Expression" xmi:id="_KeaE8m-IEeqUG8JKX_9A3g" name="eventDAO" content="eventDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.EventDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_3MjOD29sEeqUG8JKX_9A3g">
-        <targetForm xmi:type="expression:Expression" xmi:id="_0LRuMG-UEeqUG8JKX_9A3g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_3MjOD29sEeqUG8JKX_9A3g" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_v_5d0HwUEeqlv7W-PTXA5A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_3MjOEW9sEeqUG8JKX_9A3g">
         <targetForm xmi:type="expression:Expression" xmi:id="_3MjOEm9sEeqUG8JKX_9A3g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
