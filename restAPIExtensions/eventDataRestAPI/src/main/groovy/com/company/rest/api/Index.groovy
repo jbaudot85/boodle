@@ -17,6 +17,8 @@ import com.bonitasoft.web.extension.rest.RestApiController
 
 import com.company.model.Event;
 import com.company.model.EventDAO;
+import com.company.model.Vote;
+import com.company.model.VoteDAO;
 
 class Index implements RestApiController {
 
@@ -64,8 +66,49 @@ class Index implements RestApiController {
 		}
         Event selectedEvent = eventDAO.findByPersistenceId(eventID.toLong())
 		
-        // Prepare the result
-        def result = [ "shortDescription" : selectedEvent.shortDescription, "fullDescription" : selectedEvent.fullDescription ]
+		
+		// Retrieve votes
+		def voteDAO;
+		try
+		{
+			voteDAO = context.getApiClient().getDAO(VoteDAO.class);
+		}
+		catch (Exception e)
+		{
+			return buildResponse(responseBuilder, HttpServletResponse.SC_BAD_REQUEST,"""{"error" : "unable to get the VoteDAO"}""")
+		}
+        List<Vote> votes = voteDAO.findByEventId(eventID.toLong(), 0, Integer.MAX_VALUE);
+		
+		
+        // Prepare the results
+		def dates_str = [];
+		for (int i=0;i<selectedEvent.dates.size();i++)
+		{
+			dates_str.add(selectedEvent.dates[i].toString());
+		}
+		def participants_str = [];
+		for (int i=0;i<votes.size();i++)
+		{
+			participants_str.add("participant " + votes[i].voterId.toString());
+		}
+		def votes_matrix_str = [];
+		for (int i=0;i<votes.size();i++)
+		{
+			for (int j=0;j<selectedEvent.dates.size();j++)
+			{
+				if (votes[i].submitted == true)
+				{
+					votes_matrix_str.add(votes[i].attendance[j] == true ? 'true':'false');
+				}
+				else
+				{
+					votes_matrix_str.add('unknown');
+				}
+			}
+		}
+			
+		
+        def result = [ "dates" : dates_str, "participants" : participants_str, "votes_matrix": votes_matrix_str]
 
         // Send the result as a JSON representation
         // You may use buildPagedResponse if your result is multiple
