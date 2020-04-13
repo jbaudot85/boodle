@@ -1,0 +1,76 @@
+{
+  "designerVersion" : "1.11.23",
+  "id" : "customCustomBooleanMatrix",
+  "name" : "customBooleanMatrix",
+  "lastUpdate" : 1586779870172,
+  "template" : "@customCustomBooleanMatrix.tpl.html",
+  "controller" : "@customCustomBooleanMatrix.ctrl.js",
+  "description" : "A custom boolean matrix",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "hHeaders",
+      "name" : "hHeaders",
+      "caption" : "Horizontal headers of the matrix",
+      "help" : "Horizontal headers of the matrix",
+      "type" : "collection",
+      "defaultValue" : [
+        "hello",
+        "world"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "vHeaders",
+      "name" : "vHeaders",
+      "caption" : "Vertical headers of the matrix",
+      "help" : "Vertical headers of the matrix",
+      "type" : "collection",
+      "defaultValue" : [
+        "james",
+        "bond"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "values",
+      "name" : "values",
+      "caption" : "Values of the matrix as a string collection. Each string should have a value in {\"true\", \"false\", \"unknown\"}.",
+      "help" : "Values of the matrix as a string collection. Should have size H * V, where H and V respectively the horizontal and vertical headers sizes. Each string should have a value in {\"true\", \"false\", \"unknown\"}.",
+      "type" : "collection",
+      "defaultValue" : [
+        "true",
+        "false",
+        "unknown",
+        "unknown"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "assets" : [
+    {
+      "id" : "e5ea47fd-e30e-452a-9a8c-c3ce1e8839b7",
+      "name" : "box_checked.png",
+      "type" : "img",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "fb4991d1-71ea-4d64-9e24-a29147ffd1f3",
+      "name" : "box_empty.png",
+      "type" : "img",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "72badb04-3da6-4974-8255-6fc408ebe4e4",
+      "name" : "box_unchecked.png",
+      "type" : "img",
+      "order" : 3,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

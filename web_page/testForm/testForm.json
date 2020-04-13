@@ -1,0 +1,77 @@
+{
+  "designerVersion" : "1.11.23",
+  "id" : "testForm",
+  "name" : "testForm",
+  "lastUpdate" : 1586779377470,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hHeaders" : {
+            "type" : "constant",
+            "value" : [
+              "2020-03-08",
+              "world"
+            ]
+          },
+          "vHeaders" : {
+            "type" : "constant",
+            "value" : [
+              "james",
+              "bond"
+            ]
+          },
+          "values" : {
+            "type" : "constant",
+            "value" : [
+              "true",
+              "false",
+              "unknown",
+              "unknown"
+            ]
+          }
+        },
+        "reference" : "829f42f3-095a-4cd1-b4cd-75c15f1d407e",
+        "hasValidationError" : false,
+        "id" : "customCustomBooleanMatrix"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "5ac4a2a2-48d6-465a-8332-167a770e617b",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "9beb03cd-0548-4695-9673-9c64425a4d0d",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "uuid" : "d2331ba2-ed50-45e6-a305-ec046e679d66",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}
