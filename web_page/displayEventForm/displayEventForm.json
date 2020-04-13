@@ -2,13 +2,16 @@
   "designerVersion" : "1.11.23",
   "id" : "displayEventForm",
   "name" : "displayEventForm",
-  "lastUpdate" : 1586682573464,
+  "lastUpdate" : 1586781850809,
   "rows" : [
     [
       {
-        "type" : "container",
+        "type" : "component",
         "dimension" : {
-          "xs" : 12
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -19,136 +22,106 @@
             "type" : "constant",
             "value" : false
           },
-          "repeatedCollection" : {
-            "type" : "variable",
-            "value" : ""
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Select one event you created:"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
           }
         },
-        "reference" : "b2d16894-eb9b-451c-bbb2-f16fd4b755fb",
+        "reference" : "428df16f-ac87-4eee-bef5-0cf65853918c",
         "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Default label"
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "Events you created:"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                }
-              },
-              "reference" : "428df16f-ac87-4eee-bef5-0cf65853918c",
-              "hasValidationError" : false,
-              "id" : "pbText"
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "disabled" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "required" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Default label"
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
-                },
-                "inline" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "availableValues" : {
-                  "type" : "expression",
-                  "value" : "createdEventList"
-                },
-                "displayedKey" : {
-                  "type" : "constant",
-                  "value" : "shortDescription"
-                },
-                "returnedKey" : {
-                  "type" : "constant",
-                  "value" : "persistenceId"
-                },
-                "selectedValue" : {
-                  "type" : "variable",
-                  "value" : "selectedEventId"
-                }
-              },
-              "reference" : "86e8b2f8-999b-43f7-b243-5f7859f3cfab",
-              "hasValidationError" : false,
-              "id" : "pbRadioButtons"
-            }
-          ]
-        ]
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "inline" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "availableValues" : {
+            "type" : "expression",
+            "value" : "createdEventList"
+          },
+          "displayedKey" : {
+            "type" : "constant",
+            "value" : "shortDescription"
+          },
+          "returnedKey" : {
+            "type" : "constant",
+            "value" : "persistenceId"
+          },
+          "selectedValue" : {
+            "type" : "variable",
+            "value" : "selectedEventId"
+          }
+        },
+        "reference" : "86e8b2f8-999b-43f7-b243-5f7859f3cfab",
+        "hasValidationError" : false,
+        "id" : "pbRadioButtons"
       }
     ],
     [
@@ -191,16 +164,52 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "selectedEventId = {{selectedEventId}}\nselectedEventData = {{selectedEventData}}"
+            "value" : "Event status:"
           },
           "alignment" : {
             "type" : "constant",
             "value" : "left"
           }
         },
-        "reference" : "3a71baa0-ad9d-4b28-a10e-3d6dbad61bbd",
+        "reference" : "5f611017-f2d7-45ab-93a3-f7d21181966b",
         "hasValidationError" : false,
         "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hHeaders" : {
+            "type" : "expression",
+            "value" : "selectedEventData.dates"
+          },
+          "vHeaders" : {
+            "type" : "expression",
+            "value" : "selectedEventData.participants"
+          },
+          "values" : {
+            "type" : "expression",
+            "value" : "selectedEventData.votes_matrix"
+          }
+        },
+        "reference" : "ae10c29a-c940-4ca0-99b1-7cc962d6e154",
+        "hasValidationError" : false,
+        "id" : "customCustomBooleanMatrix"
       }
     ],
     [
