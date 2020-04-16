@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "customCustomBooleanMatrix",
   "name" : "customBooleanMatrix",
-  "lastUpdate" : 1586779870172,
+  "lastUpdate" : 1587064623783,
   "template" : "@customCustomBooleanMatrix.tpl.html",
   "controller" : "@customCustomBooleanMatrix.ctrl.js",
   "description" : "A custom boolean matrix",
@@ -13,38 +13,27 @@
       "name" : "hHeaders",
       "caption" : "Horizontal headers of the matrix",
       "help" : "Horizontal headers of the matrix",
-      "type" : "collection",
-      "defaultValue" : [
-        "hello",
-        "world"
-      ],
-      "bond" : "expression"
+      "type" : "text",
+      "defaultValue" : "[\"hello\", \"world\"]",
+      "bond" : "variable"
     },
     {
       "label" : "vHeaders",
       "name" : "vHeaders",
       "caption" : "Vertical headers of the matrix",
       "help" : "Vertical headers of the matrix",
-      "type" : "collection",
-      "defaultValue" : [
-        "james",
-        "bond"
-      ],
-      "bond" : "expression"
+      "type" : "text",
+      "defaultValue" : "[\"james\", \"bond\"]",
+      "bond" : "variable"
     },
     {
       "label" : "values",
       "name" : "values",
       "caption" : "Values of the matrix as a string collection. Each string should have a value in {\"true\", \"false\", \"unknown\"}.",
       "help" : "Values of the matrix as a string collection. Should have size H * V, where H and V respectively the horizontal and vertical headers sizes. Each string should have a value in {\"true\", \"false\", \"unknown\"}.",
-      "type" : "collection",
-      "defaultValue" : [
-        "true",
-        "false",
-        "unknown",
-        "unknown"
-      ],
-      "bond" : "expression"
+      "type" : "text",
+      "defaultValue" : "[\"true\", \"false\", \"unknown\", \"unknown\"]",
+      "bond" : "variable"
     }
   ],
   "assets" : [

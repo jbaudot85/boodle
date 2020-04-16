@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "displayEventForm",
   "name" : "displayEventForm",
-  "lastUpdate" : 1586781850809,
+  "lastUpdate" : 1587064647623,
   "rows" : [
     [
       {
@@ -142,72 +142,20 @@
             "type" : "constant",
             "value" : false
           },
-          "labelHidden" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "label" : {
-            "type" : "interpolation",
-            "value" : "Default label"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "Event status:"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "left"
-          }
-        },
-        "reference" : "5f611017-f2d7-45ab-93a3-f7d21181966b",
-        "hasValidationError" : false,
-        "id" : "pbText"
-      }
-    ],
-    [
-      {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
           "hHeaders" : {
-            "type" : "expression",
+            "type" : "variable",
             "value" : "selectedEventData.dates"
           },
           "vHeaders" : {
-            "type" : "expression",
+            "type" : "variable",
             "value" : "selectedEventData.participants"
           },
           "values" : {
-            "type" : "expression",
+            "type" : "variable",
             "value" : "selectedEventData.votes_matrix"
           }
         },
-        "reference" : "ae10c29a-c940-4ca0-99b1-7cc962d6e154",
+        "reference" : "7433b0da-28a1-4f3c-a81e-22ddc8436127",
         "hasValidationError" : false,
         "id" : "customCustomBooleanMatrix"
       }
@@ -218,7 +166,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "232a8014-9919-4dd8-988a-e339b134a0b1",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -259,7 +216,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Close"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -301,6 +258,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "0dd71893-af29-42c5-b4a4-1eb2dff316c3",

@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "testForm",
   "name" : "testForm",
-  "lastUpdate" : 1586779377470,
+  "lastUpdate" : 1587063146405,
   "rows" : [
     [
       {
@@ -23,27 +23,16 @@
             "value" : false
           },
           "hHeaders" : {
-            "type" : "constant",
-            "value" : [
-              "2020-03-08",
-              "world"
-            ]
+            "type" : "variable",
+            "value" : "hHeaders"
           },
           "vHeaders" : {
-            "type" : "constant",
-            "value" : [
-              "james",
-              "bond"
-            ]
+            "type" : "variable",
+            "value" : "vHeaders"
           },
           "values" : {
-            "type" : "constant",
-            "value" : [
-              "true",
-              "false",
-              "unknown",
-              "unknown"
-            ]
+            "type" : "variable",
+            "value" : "values"
           }
         },
         "reference" : "829f42f3-095a-4cd1-b4cd-75c15f1d407e",
@@ -69,7 +58,29 @@
     }
   ],
   "inactiveAssets" : [ ],
-  "variables" : { },
+  "variables" : {
+    "hHeaders" : {
+      "type" : "json",
+      "value" : [
+        "[\"hello\",\"world\"]"
+      ],
+      "exposed" : false
+    },
+    "vHeaders" : {
+      "type" : "json",
+      "value" : [
+        "[\"james\",\"bond\"]"
+      ],
+      "exposed" : false
+    },
+    "values" : {
+      "type" : "json",
+      "value" : [
+        "[\"true\", \"false\", \"unknown\", \"unknown\"]"
+      ],
+      "exposed" : false
+    }
+  },
   "hasValidationError" : false,
   "uuid" : "d2331ba2-ed50-45e6-a305-ec046e679d66",
   "type" : "form",
