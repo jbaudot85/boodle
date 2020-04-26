@@ -82,9 +82,11 @@ class Index implements RestApiController {
 		
         // Prepare the results
 		def dates_str = [];
+		def votes_aggperdate_int = [];
 		for (int i=0;i<selectedEvent.dates.size();i++)
 		{
 			dates_str.add(selectedEvent.dates[i].toString());
+			votes_aggperdate_int.add(0);
 		}
 		def participants_str = [];
 		for (int i=0;i<votes.size();i++)
@@ -92,13 +94,16 @@ class Index implements RestApiController {
 			participants_str.add("participant " + votes[i].voterId.toString());
 		}
 		def votes_matrix_str = [];
+		
 		for (int i=0;i<votes.size();i++)
 		{
+			
 			for (int j=0;j<selectedEvent.dates.size();j++)
 			{
 				if (votes[i].submitted == true)
 				{
 					votes_matrix_str.add(votes[i].attendance[j] == true ? 'true':'false');
+					votes_aggperdate_int[j]+=votes[i].attendance[j] == true ? 1:0;
 				}
 				else
 				{
@@ -108,7 +113,7 @@ class Index implements RestApiController {
 		}
 			
 		
-        def result = [ "dates" : dates_str, "participants" : participants_str, "votes_matrix": votes_matrix_str]
+        def result = [ "dates" : dates_str, "participants" : participants_str, "votes_matrix": votes_matrix_str, "votes_aggperdate":votes_aggperdate_int]
 
         // Send the result as a JSON representation
         // You may use buildPagedResponse if your result is multiple
