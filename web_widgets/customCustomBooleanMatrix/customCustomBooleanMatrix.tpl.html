@@ -6,14 +6,15 @@
      of the Custom Widget to be displayed in the whiteboard only. By default the widget is represented by an auto-generated icon
      and its name (See the <span> below).
 -->
-
 <style>
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+</style>
 
+<style>
 th.rotate {
   height: 100px;
   white-space: nowrap;
@@ -30,24 +31,28 @@ th.rotate > div {
 </style>
 
 <table border="1">
+    <thead>
     <tr>
         <th></th>
         <th ng-repeat="hheader in properties.hHeaders track by $index" class="rotate">
             <div>{{hheader}}</div>
         </th>
     </tr>
-    <tr ng-repeat="vheader in properties.vHeaders track by $index">
-        <th>{{vheader}}</th>
-        <th ng-repeat="hheader in properties.hHeaders track by $index">
+    </thead>
+    <tbody>
+    <tr ng-repeat="vheader in properties.vHeaders track by $index" class="row100">
+        <td>{{vheader}}</td>
+        <td ng-repeat="hheader in properties.hHeaders track by $index" class="column100">
             <div ng-if="properties.values[$parent.$index * properties.hHeaders.length + $index] == 'true'">
-                <img src="widgets/customCustomBooleanMatrix/assets/img/box_checked.png"/>
+                <img src="widgets/customCustomBooleanMatrix/assets/img/box_checked.svg"/>
             </div>
             <div ng-if="properties.values[$parent.$index * properties.hHeaders.length + $index] == 'false'">
-                <img src="widgets/customCustomBooleanMatrix/assets/img/box_unchecked.png"/>
+                <img src="widgets/customCustomBooleanMatrix/assets/img/box_unchecked.svg"/>
             </div>
             <div ng-if="properties.values[$parent.$index * properties.hHeaders.length + $index] == 'unknown'">
-                <img src="widgets/customCustomBooleanMatrix/assets/img/box_empty.png"/>
+                <img src="widgets/customCustomBooleanMatrix/assets/img/box_empty.svg"/>
             </div>
-        </th>
+        </td>
     </tr>
+    </tbody>
 </table>
