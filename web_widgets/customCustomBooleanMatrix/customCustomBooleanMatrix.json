@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "customCustomBooleanMatrix",
   "name" : "customBooleanMatrix",
-  "lastUpdate" : 1587891584082,
+  "lastUpdate" : 1587892930684,
   "template" : "@customCustomBooleanMatrix.tpl.html",
   "controller" : "@customCustomBooleanMatrix.ctrl.js",
   "description" : "A custom boolean matrix",
@@ -38,31 +38,10 @@
   ],
   "assets" : [
     {
-      "id" : "e5ea47fd-e30e-452a-9a8c-c3ce1e8839b7",
-      "name" : "box_checked.png",
-      "type" : "img",
-      "order" : 1,
-      "external" : false
-    },
-    {
-      "id" : "fb4991d1-71ea-4d64-9e24-a29147ffd1f3",
-      "name" : "box_empty.png",
-      "type" : "img",
-      "order" : 2,
-      "external" : false
-    },
-    {
       "id" : "396305dd-fd09-4eb7-94fe-264c7e9aea47",
       "name" : "box_empty.svg",
       "type" : "img",
       "order" : 5,
-      "external" : false
-    },
-    {
-      "id" : "72badb04-3da6-4974-8255-6fc408ebe4e4",
-      "name" : "box_unchecked.png",
-      "type" : "img",
-      "order" : 3,
       "external" : false
     },
     {
