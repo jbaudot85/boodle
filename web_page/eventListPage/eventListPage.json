@@ -1,0 +1,267 @@
+{
+  "designerVersion" : "1.11.23",
+  "id" : "eventListPage",
+  "name" : "eventListPage",
+  "lastUpdate" : 1589040882090,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [
+              "Creator",
+              "Short Description",
+              "Full Description"
+            ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "createdEventList"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [
+              "creatorId",
+              "shortDescription",
+              "fullDescription"
+            ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : "selectedEvent"
+          },
+          "striped" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "condensed" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "bordered" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "1e003361-4309-41e7-98d9-6a675fc7c8b5",
+        "hasValidationError" : false,
+        "id" : "pbTable"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Create"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "process"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "constant"
+          },
+          "processName" : {
+            "type" : "constant",
+            "value" : "CreateEvent"
+          },
+          "processVersion" : {
+            "type" : "constant",
+            "value" : "1.0"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_blank"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "danger"
+          }
+        },
+        "reference" : "93de8686-2923-4960-9a72-8154b65d650d",
+        "hasValidationError" : false,
+        "id" : "pbLink"
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "ee05c587-44ba-4524-958b-5197472062aa",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "hHeaders" : {
+                  "type" : "variable",
+                  "value" : "selectedEventData.dates"
+                },
+                "vHeaders" : {
+                  "type" : "variable",
+                  "value" : "selectedEventData.participants"
+                },
+                "values" : {
+                  "type" : "variable",
+                  "value" : "selectedEventData.votes_matrix"
+                }
+              },
+              "reference" : "13486cf2-7842-438b-80aa-4f3279dedefc",
+              "hasValidationError" : false,
+              "id" : "customCustomBooleanMatrix"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "2f995324-3fb2-49c8-a8c3-ef9250da1e1d",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "176ed029-ccd7-4051-83d1-7305c5aaad85",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "session" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/unusedId"
+      ],
+      "exposed" : false
+    },
+    "loggedUser" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{session.user_id}}"
+      ],
+      "exposed" : false
+    },
+    "createdEventList" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Event?p=0&c=10000&q=findByCreatorId&f=creatorId={{session.user_id}}"
+      ],
+      "exposed" : false
+    },
+    "selectedEvent" : {
+      "type" : "json",
+      "value" : [
+        "{}"
+      ],
+      "exposed" : false
+    },
+    "selectedEventData" : {
+      "type" : "url",
+      "value" : [
+        "../API/extension/eventData?e={{selectedEvent.persistenceId}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "604ef9c0-25c6-45f4-b051-3002a3f64928",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

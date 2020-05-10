@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="Boodle" version="1.0" profile="User" homePage="main" state="ACTIVATED" layout="custompage_BoodleLayoutV5" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Boodle Main</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_voteListPage" token="pendingvotes"/>
+            <applicationPage customPage="custompage_eventListPage" token="main"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="pendingvotes">
+                <displayName>Pending Votes</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="main">
+                <displayName>My Events Status</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
