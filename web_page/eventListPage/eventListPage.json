@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "eventListPage",
   "name" : "eventListPage",
-  "lastUpdate" : 1589040882090,
+  "lastUpdate" : 1591040591613,
   "rows" : [
     [
       {
@@ -117,7 +117,7 @@
           },
           "target" : {
             "type" : "constant",
-            "value" : "_blank"
+            "value" : "_parent"
           },
           "appToken" : {
             "type" : "constant"

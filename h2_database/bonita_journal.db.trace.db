@@ -1,8 +1,8 @@
-2020-03-23 19:00:26 jdbc[3]: exception
+2020-06-03 22:01:49 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SEQUENCE" non trouvée
 Table "SEQUENCE" not found; SQL statement:
 select count(*) from sequence [42102-199]
-2020-03-23 19:00:26 jdbc[3]: exception
+2020-06-03 22:01:49 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SEQUENCE" non trouvée
 Table "SEQUENCE" not found; SQL statement:
 select count(*) from sequence [42102-199]
