@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.company.rest.api.IndexTest" time="1.42" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.company.rest.api.IndexTest" time="0.565" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\BonitaStudioSubscription-7.11.0.beta-01\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf916911410559971449.tmp"/>
+    <property name="classworlds.conf" value="C:\BonitaStudioSubscription-7.11.0.beta-01\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf502955482971988614.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.242-3/bin/../jre/bin/server;C:/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.242-3/bin/../jre/bin;C:/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.242-3/bin/../jre/lib/amd64;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\jre\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files (x86)\Yarn\bin\;C:\Users\jonathan.baudot\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin;;C:\Users\jonathan.baudot\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\Users\jonathan.baudot\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\jonathan.baudot\AppData\Local\Yarn\bin;C:\BonitaStudioSubscription-7.11.0.beta-01;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,6 +61,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.company.rest.api.IndexTest" name="should_return_error_when_unexisting_event" time="1.168"/>
-  <testcase classname="com.company.rest.api.IndexTest" name="should_return_a_json_representation_as_result" time="0.252"/>
+  <testcase classname="com.company.rest.api.IndexTest" name="should_return_error_when_unexisting_event" time="0.464"/>
+  <testcase classname="com.company.rest.api.IndexTest" name="should_return_a_json_representation_as_result" time="0.101"/>
 </testsuite>
