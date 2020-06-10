@@ -22,7 +22,7 @@ import java.time.*;
 /**
  * @see http://spockframework.github.io/spock/docs/1.0/index.html
  */
-class IndexTest extends Specification {
+class EventInfoTest extends Specification {
 
     // Declare mocks here
     // Mocks are used to simulate external dependencies behavior
@@ -114,7 +114,7 @@ class IndexTest extends Specification {
     def should_return_a_json_representation_as_result()
 	{
         given: "a RestAPIController"
-        def index = new Index()
+        def index = new EventInfo()
         httpRequest.getParameter("e") >> this.refEventID.toString();
 
         when: "Invoking the REST API"

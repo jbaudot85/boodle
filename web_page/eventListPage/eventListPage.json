@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "eventListPage",
   "name" : "eventListPage",
-  "lastUpdate" : 1591040591613,
+  "lastUpdate" : 1591819791028,
   "rows" : [
     [
       {
@@ -255,7 +255,7 @@
     "selectedEventData" : {
       "type" : "url",
       "value" : [
-        "../API/extension/eventData?e={{selectedEvent.persistenceId}}"
+        "../API/extension/eventInfo?e={{selectedEvent.persistenceId}}"
       ],
       "exposed" : false
     }

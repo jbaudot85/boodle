@@ -20,9 +20,9 @@ import com.company.model.EventDAO;
 import com.company.model.Vote;
 import com.company.model.VoteDAO;
 
-class Index implements RestApiController {
+class EventInfo implements RestApiController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Index.class)
+    private static final Logger LOGGER = LoggerFactory.getLogger(EventInfo.class)
 
     @Override
     RestApiResponse doHandle(HttpServletRequest request, RestApiResponseBuilder responseBuilder, RestAPIContext context) {

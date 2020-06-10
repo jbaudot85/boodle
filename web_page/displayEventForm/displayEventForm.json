@@ -2,7 +2,7 @@
   "designerVersion" : "1.11.23",
   "id" : "displayEventForm",
   "name" : "displayEventForm",
-  "lastUpdate" : 1587894573932,
+  "lastUpdate" : 1591819725056,
   "rows" : [
     [
       {
@@ -584,7 +584,7 @@
     "selectedEventData" : {
       "type" : "url",
       "value" : [
-        "../API/extension/eventData?e={{selectedEventId}}"
+        "../API/extension/eventInfo?e={{selectedEventId}}"
       ],
       "exposed" : false
     }
