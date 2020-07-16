@@ -1,4 +1,10 @@
 com\company\rest\api\EventInfo$_loadProperties_closure3.class
 com\company\rest\api\EventInfo.class
 com\company\rest\api\EventInfo$_buildResponse_closure1.class
+com\company\rest\api\EventList$_loadProperties_closure5.class
+com\company\rest\api\EventList.class
+com\company\rest\api\EventList$_buildPagedResponse_closure4.class
+com\company\rest\api\EventList$_doHandle_closure2.class
+com\company\rest\api\EventList$_buildResponse_closure3.class
+com\company\rest\api\EventList$_eventToJson_closure1.class
 com\company\rest\api\EventInfo$_buildPagedResponse_closure2.class

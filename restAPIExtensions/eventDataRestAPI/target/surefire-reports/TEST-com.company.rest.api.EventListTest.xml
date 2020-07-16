@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.company.rest.api.EventInfoTest" time="0.607" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.company.rest.api.EventListTest" time="0.021" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.242-3\jre\bin"/>
@@ -61,6 +61,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.company.rest.api.EventInfoTest" name="should_return_error_when_unexisting_event" time="0.506"/>
-  <testcase classname="com.company.rest.api.EventInfoTest" name="should_return_a_json_representation_as_result" time="0.101"/>
+  <testcase classname="com.company.rest.api.EventListTest" name="should_return_error_when_unexisting_event" time="0"/>
+  <testcase classname="com.company.rest.api.EventListTest" name="should_return_a_json_representation_as_result" time="0.021"/>
 </testsuite>

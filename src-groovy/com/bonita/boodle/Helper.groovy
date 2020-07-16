@@ -1,9 +1,12 @@
 package com.bonita.boodle
 
+import java.time.format.DateTimeFormatter;
 import org.bonitasoft.engine.api.IdentityAPI;
 import org.bonitasoft.engine.bpm.process.ProcessInstance;
 import com.bonitasoft.engine.api.APIAccessor
 import com.bonitasoft.engine.api.ProcessAPI;
+
+import com.company.model.Event;
 
 class Helper
 {
@@ -16,5 +19,25 @@ class Helper
 		String initiatorId = identityApi.getUser(initiator).id;
 		
 		return initiatorId;
+	}
+	
+	static def eventToJson(Event e)
+	{
+		String finalDate = null;
+		if (e.getFinalDate() != null)
+		{
+			finalDate = e.getFinalDate().format(DateTimeFormatter.ISO_LOCAL_DATE);
+		}
+		List<String> dates = [];
+		e.getDates().forEach { t -> dates.add(t.format(DateTimeFormatter.ISO_LOCAL_DATE))};
+		
+		def outMap = ["shortDescription":e.getShortDescription(), 
+			"fullDescription":e.getFullDescription(),
+			"dates":dates,
+			"creatorId":e.getCreatorId(),
+			"participantIds":e.getParticipantIds(),
+			"finalDate":finalDate];
+		
+		return outMap;
 	}
 }

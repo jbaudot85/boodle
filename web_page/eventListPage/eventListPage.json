@@ -2,8 +2,60 @@
   "designerVersion" : "1.11.23",
   "id" : "eventListPage",
   "name" : "eventListPage",
-  "lastUpdate" : 1591819791028,
+  "lastUpdate" : 1592424969848,
   "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{createdEventList}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "388771a0-c8bc-439d-85f1-b9777ed94f36",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
     [
       {
         "type" : "component",
@@ -36,7 +88,7 @@
           },
           "content" : {
             "type" : "expression",
-            "value" : "createdEventList"
+            "value" : "createdEventList.events"
           },
           "columnsKey" : {
             "type" : "constant",
@@ -241,7 +293,7 @@
     "createdEventList" : {
       "type" : "url",
       "value" : [
-        "../API/bdm/businessData/com.company.model.Event?p=0&c=10000&q=findByCreatorId&f=creatorId={{session.user_id}}"
+        "../API/extension/eventList?u={{session.user_id}}"
       ],
       "exposed" : false
     },
